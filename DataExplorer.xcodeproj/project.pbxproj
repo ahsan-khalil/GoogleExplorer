@@ -13,6 +13,13 @@
 		8BBE9F09256CF4F00053E243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE9F07256CF4F00053E243 /* Main.storyboard */; };
 		8BBE9F0B256CF4F20053E243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE9F0A256CF4F20053E243 /* Assets.xcassets */; };
 		8BBE9F0E256CF4F20053E243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE9F0C256CF4F20053E243 /* LaunchScreen.storyboard */; };
+		8BBE9F24256D0A3B0053E243 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE9F21256D0A3B0053E243 /* GoogleSignInDependencies.framework */; };
+		8BBE9F25256D0A3B0053E243 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8BBE9F22256D0A3B0053E243 /* GoogleSignIn.bundle */; };
+		8BBE9F26256D0A3B0053E243 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE9F23256D0A3B0053E243 /* GoogleSignIn.framework */; };
+		8BBE9F2A256D0AA50053E243 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE9F29256D0AA50053E243 /* LocalAuthentication.framework */; };
+		8BBE9F2C256D0AAF0053E243 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE9F2B256D0AAF0053E243 /* SafariServices.framework */; };
+		8BBE9F2E256D0ABD0053E243 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE9F2D256D0ABD0053E243 /* AuthenticationServices.framework */; };
+		8BBE9F30256D0AD80053E243 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBE9F2F256D0AD80053E243 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		8BBE9F0A256CF4F20053E243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BBE9F0D256CF4F20053E243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BBE9F0F256CF4F20053E243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BBE9F21256D0A3B0053E243 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		8BBE9F22256D0A3B0053E243 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		8BBE9F23256D0A3B0053E243 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		8BBE9F29256D0AA50053E243 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		8BBE9F2B256D0AAF0053E243 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		8BBE9F2D256D0ABD0053E243 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		8BBE9F2F256D0AD80053E243 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBE9F30256D0AD80053E243 /* SystemConfiguration.framework in Frameworks */,
+				8BBE9F2E256D0ABD0053E243 /* AuthenticationServices.framework in Frameworks */,
+				8BBE9F2C256D0AAF0053E243 /* SafariServices.framework in Frameworks */,
+				8BBE9F2A256D0AA50053E243 /* LocalAuthentication.framework in Frameworks */,
+				8BBE9F24256D0A3B0053E243 /* GoogleSignInDependencies.framework in Frameworks */,
+				8BBE9F26256D0A3B0053E243 /* GoogleSignIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +60,12 @@
 		8BBE9EF5256CF4F00053E243 = {
 			isa = PBXGroup;
 			children = (
+				8BBE9F22256D0A3B0053E243 /* GoogleSignIn.bundle */,
+				8BBE9F23256D0A3B0053E243 /* GoogleSignIn.framework */,
+				8BBE9F21256D0A3B0053E243 /* GoogleSignInDependencies.framework */,
 				8BBE9F00256CF4F00053E243 /* DataExplorer */,
 				8BBE9EFF256CF4F00053E243 /* Products */,
+				8BBE9F28256D0AA50053E243 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +89,17 @@
 				8BBE9F0F256CF4F20053E243 /* Info.plist */,
 			);
 			path = DataExplorer;
+			sourceTree = "<group>";
+		};
+		8BBE9F28256D0AA50053E243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BBE9F2F256D0AD80053E243 /* SystemConfiguration.framework */,
+				8BBE9F2D256D0ABD0053E243 /* AuthenticationServices.framework */,
+				8BBE9F2B256D0AAF0053E243 /* SafariServices.framework */,
+				8BBE9F29256D0AA50053E243 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBE9F25256D0A3B0053E243 /* GoogleSignIn.bundle in Resources */,
 				8BBE9F0E256CF4F20053E243 /* LaunchScreen.storyboard in Resources */,
 				8BBE9F0B256CF4F20053E243 /* Assets.xcassets in Resources */,
 				8BBE9F09256CF4F00053E243 /* Main.storyboard in Resources */,
@@ -220,6 +256,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -274,6 +314,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -288,6 +332,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LXKUHJHQV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DataExplorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +355,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LXKUHJHQV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DataExplorer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
